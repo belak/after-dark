@@ -15,7 +15,7 @@ Head to [Hack Cabin](http://hackcabin.com) for a production example running on A
 
 - Dark theme intended for low-light reading
 - Entire page served in a single HTTP request (including favicon)
-- Grid layouts and more using [hack.css](hackcss.com)
+- Grid layouts and more using [hack.css](http://hackcss.com)
 - Responsive typography optimized for mobile, tablet and desktop
 - Gentle content fade-in using CSS keyframe animation
 - [Schema.org Structured Data](https://moz.com/learn/seo/schema-structured-data) for site nav and posts

@@ -40,7 +40,7 @@ Head to [Hack Cabin](http://hackcabin.com) for a production example running on A
 [Install Hugo](https://gohugo.io/#action) and create a new site:
 
 ```shell
-brew update && brew install hugo
+brew install hugo
 hugo new site flying-toasters && cd $_
 ```
 
@@ -134,7 +134,7 @@ images = [
 
 Test how things are looking during development using a combination of the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) and [ngrok](https://ngrok.com/).
 
-**Gotcha:** Relative source URLs are not currently permitted.
+**Gotcha:** Relative source URLs are not currently supported.
 
 ## Upgrading hack.css
 

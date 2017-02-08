@@ -76,6 +76,7 @@ SectionPagesMenu = "main" # Enable menu system for lazy bloggers
   author = "" # Optional, controls author name display on posts
   show_menu = false # Optional, set false to disable menu entirely
   powered_by = true # Optional, set false to disable credits
+  accent_color = "#ff00ff" # Optional, replace the pink accent color
 
   [params.seo]
     google_verify = "" # Optional, Google verification code

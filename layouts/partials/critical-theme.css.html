@@ -22,7 +22,7 @@
     padding: 20px 10px;
   }
   nav a.active {
-    background-color: #ff2e88;
+    background-color: {{ with .Site.Params.accent_color }}{{ . }}{{ else }}#ff2e88{{ end }};
     color: #fff;
   }
   html {
@@ -40,4 +40,14 @@
       max-width: 50rem;
     }
   }
+
+  {{ with .Site.Params.accent_color }}
+    a {
+      color: {{ . }};
+      border-bottom: {{ . }};
+    }
+    a:hover {
+      background-color: {{ . }};
+    }
+  {{ end }}
 </style>

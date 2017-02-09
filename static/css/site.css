@@ -1,0 +1,55 @@
+/* Hack enhancements */
+html {
+    font-size: 13px;
+}
+
+body {
+    color: #ccc;
+    background-color: #000;
+}
+
+pre {
+    border: none;
+    padding: 0;
+}
+
+pre code {
+    border: 1px solid #333;
+}
+
+.hack code {
+    padding: 0.3rem;
+}
+
+.hack li ul {
+    margin: 0;
+}
+.main {
+    padding: 20px 10px;
+}
+article [itemprop="description"] {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.container {
+    max-width: 50rem;
+}
+
+/* Override the hack.css link colors */
+nav a.active {
+    background-color: #81a2be;
+    color: #fff;
+}
+a {
+    color: #81a2be;
+    border-bottom: #81a2be;
+}
+a:hover {
+    background-color: #81a2be;
+}
+
+/* Useful classes */
+.muted {
+    color: rgba(255, 255, 255, 0.5);
+}

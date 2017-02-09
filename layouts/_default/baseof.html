@@ -33,13 +33,19 @@
 
     {{ partial "favicon" . }}
 
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/hack-0.7.7.css" />
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/hack-themes-0.7.7.css" />
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/hack/0.7.7/hack.css" />
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/hybrid.min.css" />
 
-    {{ partial "critical-theme.css" . }}
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/site.css" />
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+
     {{ partial "critical-custom.css" . }}
   </head>
-  <body class="hack dark main container">
+  <body class="hack main container">
     <header>{{ block "header" . }}{{ end }}</header>
     <main>{{ block "main" . }}{{ end }}</main>
     <footer>{{ block "footer" . }}{{ end }}</footer>

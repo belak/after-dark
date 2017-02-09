@@ -30,8 +30,12 @@
     {{ if (isset .Params "next") }}
       <link rel="next" href="{{ .Params.next }}">
     {{ end }}
+
     {{ partial "favicon" . }}
-    {{ partial "critical-vendor.css" . }}
+
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/hack-0.7.7.css" />
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/hack-themes-0.7.7.css" />
+
     {{ partial "critical-theme.css" . }}
     {{ partial "critical-custom.css" . }}
   </head>
